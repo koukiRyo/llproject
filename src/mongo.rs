@@ -1,5 +1,4 @@
 use mongodb::{options::ClientOptions , Client};
-use mongodb::bson::doc;
 
 pub struct ConnectionResult {
     pub client : mongodb::Client,

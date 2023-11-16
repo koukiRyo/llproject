@@ -1,5 +1,9 @@
-#[derive(Debug)]
-pub struct Words {
+pub enum Words {
+    Verb,
+    Adj,
+}
+
+pub struct Verb{
     dic: Option<String>,
     ta: Option<String>,
     nai: Option<String>,
@@ -18,7 +22,12 @@ pub struct Words {
     kinnshi: Option<String>,
     imi: Option<String>,
     sentence: Vec<String>,
-    sup: Vec<String>,
+    sup: Vec<Option<String>>,
     count: i32,
 }
 
+pub struct Adj{
+    dic: String,
+    imi: String,
+    count: i32,
+}

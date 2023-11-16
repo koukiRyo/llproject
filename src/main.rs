@@ -19,8 +19,6 @@ fn main() {
     let db = client.database("llproject");
     let collection: mongodb::Collection<Words> = db.collection("word");
 
-    println!("{:?}" , db);
-    println!("{:?}" , collection);
     
 }
 
